@@ -75,6 +75,11 @@ DT.ClassSpec = {
 		164,	--Fury,狂怒
 		163,	--Protection,防护
 	},
+	PET = {
+		409,	-- Tenacity,坚韧系
+		410,	-- Ferocity,狂野系
+		411,	-- Cunning,狡诈系
+	},
 };
 --
 	--	DT.TalentDB
@@ -993,7 +998,6 @@ DT.TalentDB = {
 			{ 10, 1, 1867, 1, nil, nil,  nil, { 46917,   nil,   nil,   nil,   nil, }, 'TEXTURE', },
 		},
 	},
-	--[[
 	PET = {
 		[409] = {
 			{  0, 0, 2114, 2, nil, nil,  nil, { 61682, 61683,   nil,   nil,   nil, }, 'TEXTURE', },
@@ -1065,7 +1069,6 @@ DT.TalentDB = {
 			{  5, 3, 2278, 1,   4,   3, 2257, { 53480,   nil,   nil,   nil,   nil, }, 'TEXTURE', },
 		},
 	},
-	--]]
 };
 --
 	--	DT.SpellDB_P
@@ -1170,6 +1173,11 @@ DT.ClassBG = {
 		"Interface\\TalentFrame\\bg-warrior-fury",
 		"Interface\\TalentFrame\\bg-warrior-protection",
 	},
+	PET = {
+		"Interface\\TalentFrame\\bg-warrior-protection",
+		"Interface\\TalentFrame\\bg-druid-cat",
+		"Interface\\TalentFrame\\bg-rogue-assassination",
+	},
 };
 
 DT.SpecBG = {
@@ -1200,6 +1208,10 @@ DT.SpecBG = {
 		[161] = "Interface\\TalentFrame\\WarriorArms-TopLeft",
 		[164] = "Interface\\TalentFrame\\WarriorFury-TopLeft",
 		[163] = "Interface\\TalentFrame\\WarriorProtection-TopLeft",
+
+		[409] = "Interface\\TalentFrame\\WarriorProtection-TopLeft",
+		[410] = "Interface\\TalentFrame\\DruidFeralCombat-TopLeft",
+		[411] = "Interface\\TalentFrame\\RogueAssassination-TopLeft",
 };
 
 DT.PresetTalents = {
